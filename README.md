@@ -3,6 +3,11 @@
 A modern, responsive web application for tracking and managing AI safety incidents. Built with Next.js and React, featuring real-time incident reporting, filtering, and search capabilities.
 
 ![AI Safety Incident Dashboard](h1.png)
+![AI Safety Incident Dashboard](h2.png)
+![AI Safety Incident Dashboard](h3.png)
+![AI Safety Incident Dashboard](h4.png)
+![AI Safety Incident Dashboard](h5.png)
+
 
 ## Features
 

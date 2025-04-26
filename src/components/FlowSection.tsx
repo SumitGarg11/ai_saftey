@@ -1,5 +1,26 @@
+"use client";
+
 import React from 'react';
 import styles from './FlowSection.module.css';
+
+// Add type definitions for lottie-player
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'lottie-player': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & {
+          src: string;
+          background?: string;
+          speed?: string;
+          style?: React.CSSProperties;
+          loop?: boolean;
+          autoplay?: boolean;
+        },
+        HTMLElement
+      >;
+    }
+  }
+}
 
 /**
  * FlowSection Component
