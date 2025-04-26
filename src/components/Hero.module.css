@@ -1,0 +1,88 @@
+/* Main container for the hero section */
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+    /* Using the same background as global theme */
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Content section containing heading and subheading */
+.content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+/* Main heading styles */
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+}
+
+/* Subheading styles */
+.subheading {
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+/* Wrapper for the animation container */
+.animationWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular container for the Lottie animation */
+.circularContainer {
+    /* Increased size for better visibility */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Subtle gradient background */
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    /* Neumorphic shadow effect */
+    box-shadow: 20px 20px 60px #151515,
+        -20px -20px 60px #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .heroContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+    }
+
+    /* Adjusted size for mobile */
+    .circularContainer {
+        width: 350px;
+        height: 350px;
+    }
+}
